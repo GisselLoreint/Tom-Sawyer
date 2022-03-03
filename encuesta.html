@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es-Es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Encuesta</title>
+    <link type="image/x-icon" href="img/tom.ico" rel="icon">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body class="fondo">
+    <header>
+        <h1>Tom Sawyer</h1><br><br>
+        <!--<img src="img/tom.jpg" id="img1" width="300" height="500">-->
+    </header>
+    <nav>
+        <ul class="menu cajamenu">
+            <li><a href="homeTom.html"> Descripción </a></li>
+            <li><a href="familiayamigos.html"> Familia y Amigos </a></li>
+            <li><a href="encuesta.html"> ¿Qué recuerdas? </a></li>
+            <li><a href="linksTom.html"> Serie, música y más </a></li>
+        </ul>
+    </nav>
+
+    <form name="Form" action="homeTom.html" method="post" target="_self" autocomplete="autocomplete" novalidate
+        class="form-group">
+
+        <div>
+            <h2 class="centrar">¿Qué recuerdas?</h2><br><br>
+        </div>
+
+        <div>
+            <label for="Form">Ingresa nombres y apellidos: </label>
+            <input name="nombre" id="nombre" type="text" required><br><br>
+        </div>
+        <div>
+            <label for="">Ingrese su correo electrónico: </label>
+            <input type="email" id="email" name="email" required>
+        </div><br>
+        <div>
+            <label for="day">
+                <span>Ingresa la fecha de hoy: </span>
+                <input type="date" name="date" id="date">
+            </label>
+        </div>
+
+        <div>
+            <h3>Vamos a ver qué recuerdas</h3>
+            <p>Responde las preguntas de acuerdo a la información que lesite sobre Tom Sawyer</p>
+            <label>Elije la opción correcta: </label><br><br>
+        </div>
+        <div class="form-group">
+            <label for="años">1. ¿Cuántos años tiene Tom?</label>
+            <input name="años" id="años" type="radio"><span>10 años</span>
+            <input name="años" id="años" type="radio"><span>14 años</span>
+            <input name="años" id="años" type="radio"><span>12 años</span>
+            <input name="años" id="años" type="radio"><span>13 años</span>
+        </div>
+        <div class="form-group">
+            <label for="cantidadpersonas">2. ¿Con cuántas personas vive Tom?</label>
+            <input name="cantidadpersonas" id="cantidadpersonas" type="radio" required><span>4 </span>
+            <input name="cantidadpersonas" id="cantidadpersonas" type="radio" required><span>6 </span>
+            <input name="cantidadpersonas" id="cantidadpersonas" type="radio" required><span>3 </span>
+            <input name="cantidadpersonas" id="cantidadpersonas" type="radio" required><span>5 </span>
+        </div>
+        <div class="form-group">
+            <label for="opcion">3. ¿Cuál es el mejor amigo de Tom?</label>
+            <input name="opcion" id="opcion" type="radio"><span>Becky</span>
+            <input name="opcion" id="opcion" type="radio"><span>Jim</span>
+            <input name="opcion" id="opcion" type="radio"><span>Sid</span>
+            <input name="opcion" id="opcion" type="radio"><span>Becky</span>
+        </div>
+        <div class="form-group">
+            <label for="afirmacion">4. Selecciona dos afirmaciones que sean correctas: </label>
+            <input name="afirmacion" id="afirmacion" type="checkbox"><span>Huck es el hermano de Tom</span>
+            <input name="afirmacion" id="afirmacion" type="checkbox"><span>Huck es vive con su padre</span>
+            <input name="afirmacion" id="afirmacion" type="checkbox"><span>Huck es el mejor amigo de Tom</span>
+            <input name="afirmacion" id="afirmacion" type="checkbox"><span>Huck es huerfano </span>
+        </div>
+        <div class="form-group">
+            <label for="afirmacion2">5. Elige la o las opciones correctas: </label>
+            <input name="afirmacion2" id="afirmacion2" type="checkbox"><span>María es la prima menor de Tom</span>
+            <input name="afirmacion2" id="afirmacion2" type="checkbox"><span>Polly es la tía de Tom</span>
+            <input name="afirmacion2" id="afirmacion2" type="checkbox"><span>A Tom no le agrada su profesor</span>
+            <input name="afirmacion2" id="afirmacion2" type="checkbox"><span>A tom le gustan las aventuras </span>
+        </div>
+        <div class="form-group">
+            <label for="ciudad">6. ¿Dónde vive Tom? </label>
+            <select name="ciudad">
+                <option value="0" selected>Elige...</option>
+                <option value="1">Petersburgo</option>
+                <option value="2">San Petersburgo</option>
+                <option value="3">Johannesburgo</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="rio">7. ¿Qué rio le gusta visitar a Tom? </label>
+            <select name="rio">
+                <option value="0" selected>Elige...</option>
+                <option value="1">Misissipi</option>
+                <option value="2">Misuri</option>
+                <option value="3">Mackenzie</option>
+            </select>
+        </div>
+        <div class="boton">
+            <button type="submit">Enviar respuesta</button>
+        </div>
+        <div class="boton">
+            <button type="submit">Volver a intentar</button>
+        </div>
+
+    </form>
+</body>
+
+</html>
